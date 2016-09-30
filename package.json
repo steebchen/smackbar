@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/steebchen/smackbar/issues"
   },
-  "homepage": "https://github.com/steebchen/smackbar#readme"
+  "homepage": "https://github.com/steebchen/smackbar#readme",
+  "dependencies": {
+    "smiler": "^1.0.1"
+  }
 }
