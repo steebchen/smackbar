@@ -30,7 +30,7 @@ $.toast = function(obj) {
         }
     }
 
-    $toast.prepend('<div class="toast-close"><i class="material-icons">&#xE5CD;</i></div>')
+    $toast.prepend('<div class="toast-close">&#10005;</div>')
 
     $('body').append($toast)
 
