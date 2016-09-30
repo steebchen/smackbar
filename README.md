@@ -25,6 +25,12 @@ npm i
 npm start # compiles all files to the ./public/ directory. edit app.js to customize behavior
 ```
 
+Method 3: get from npm
+
+```
+npm i smackbar
+```
+
 ### usage
 
 #### simple
