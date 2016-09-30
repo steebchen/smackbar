@@ -9,12 +9,20 @@ Google's material design mixed with the project's only dependency
 
 ### setup
 
-CDN method (recommended)
+Method 1: CDN (**recommended**)
 
 ```html
 <script src="https://cdndoge.xyz/common/js/jquery.js"></script>
 <script src="https://cdndoge.xyz/lib/smackbar/smackbar.js"></script>
 <link rel="stylesheet" href="https://cdndoge.xyz/lib/smackbar/smackbar.css"/>
+```
+
+Method 2: compile it by yourself (fully customizable)
+
+```
+git clone https://github.com/steebchen/smackbar && cd smackbar
+npm i
+npm start # compiles all files to the ./public/ directory. edit app.js to customize behavior
 ```
 
 ### usage
