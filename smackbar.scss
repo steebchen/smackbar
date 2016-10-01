@@ -1,4 +1,4 @@
-.toast {
+.smackbar {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -16,18 +16,18 @@
     user-select: none;
 }
 
-.toast.toast--shown {
+.smackbar.smackbar--shown {
     transform: translateY(0);
     opacity: 1;
 }
 
-.toast .toast-close {
+.smackbar .smackbar-close {
     float: right;
     cursor: pointer;
     margin-left: 1em;
 }
 
-.toast .toast-button {
+.smackbar .smackbar-button {
     float: right;
     background: inherit;
     font-size: 1.2em;
@@ -39,10 +39,10 @@
     cursor: pointer;
 }
 
-.toast .toast-button:hover {
+.smackbar .smackbar-button:hover {
     background: #514951;
 }
 
-.toast .toast-button:active {
+.smackbar .smackbar-button:active {
     background: #6b626b;
 }

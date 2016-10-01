@@ -1,25 +1,25 @@
-$.toast = function(obj) {
+$.smackbar = function (obj) {
     obj.timeout = obj.timeout || 4000
 
-    var $toast = $('<div/>')
-    $toast.addClass('toast')
+    var $smackbar = $('<div/>')
+    $smackbar.addClass('smackbar')
 
     function close() {
-        $toast.removeClass('toast--shown')
+        $smackbar.removeClass('smackbar--shown')
         if (obj.onclose) obj.onclose()
     }
 
-    $toast.html('<div class="toast-text">' + obj.message + '</div>')
+    $smackbar.html('<div class="smackbar-text">' + obj.message + '</div>')
 
     if (obj.button) {
-        var $toastButton = $('<div/>')
-        $toastButton.addClass('toast-button btn')
-        $toastButton.html(obj.button.text)
+        var $smackbarButton = $('<div/>')
+        $smackbarButton.addClass('smackbar-button btn')
+        $smackbarButton.html(obj.button.text)
 
-        $toast.prepend($toastButton)
+        $smackbar.prepend($smackbarButton)
 
         if (obj.button.onclick) {
-            $toastButton.click(function() {
+            $smackbarButton.click(function () {
                 obj.button.onclick()
 
                 if (!obj.preventClose) {
@@ -29,15 +29,15 @@ $.toast = function(obj) {
         }
     }
 
-    $toast.prepend('<div class="toast-close">&#10005;</div>')
+    $smackbar.prepend('<div class="smackbar-close">&#10005;</div>')
 
-    $('body').append($toast)
+    $('body').append($smackbar)
 
-    setTimeout(function() {
-        $toast.addClass('toast--shown')
+    setTimeout(function () {
+        $smackbar.addClass('smackbar--shown')
     }, 0)
 
-    $('.toast .toast-close').click(function() {
+    $('.smackbar .smackbar-close').click(function () {
         close()
     })
 
