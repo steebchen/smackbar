@@ -1,5 +1,10 @@
 $.smackbar = function (obj) {
+    obj = obj || {}
     obj.timeout = obj.timeout || 4000
+
+    if (!obj.message) {
+        throw new Error('no message specified')
+    }
 
     var $smackbar = $('<div/>')
     $smackbar.addClass('smackbar')
