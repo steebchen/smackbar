@@ -1,5 +1,4 @@
 $.toast = function(obj) {
-    obj.button = obj.button || {}
     obj.timeout = obj.timeout || 4000
 
     var $toast = $('<div/>')
