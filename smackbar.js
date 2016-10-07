@@ -48,3 +48,5 @@ $.toast = function (obj) {
         setTimeout(close, obj.timeout)
     }
 }
+}
+}
