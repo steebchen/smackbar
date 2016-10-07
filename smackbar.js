@@ -1,4 +1,6 @@
-$.toast = function(obj) {
+'use strict'
+
+$.toast = function (obj) {
     obj.button = obj.button || {}
     obj.timeout = obj.timeout || 4000
 
@@ -20,7 +22,7 @@ $.toast = function(obj) {
         $toast.prepend($toastButton)
 
         if (obj.button.onclick) {
-            $toastButton.click(function() {
+            $toastButton.click(function () {
                 obj.button.onclick()
 
                 if (!obj.preventClose) {
@@ -34,11 +36,11 @@ $.toast = function(obj) {
 
     $('body').append($toast)
 
-    setTimeout(function() {
+    setTimeout(function () {
         $toast.addClass('toast--shown')
     }, 0)
 
-    $('.toast .toast-close').click(function() {
+    $('.toast .toast-close').click(function () {
         close()
     })
 
