@@ -1,6 +1,6 @@
 $mobile: 480px;
 
-.toast {
+.smackbar {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -15,23 +15,24 @@ $mobile: 480px;
     opacity: 0;
     background: #363136;
     color: #fff;
+    user-select: none;
     @media (max-width: $mobile) {
         width: 100%;
         margin: 0;
     }
 
-    &.toast--shown {
+    &.smackbar--shown {
         transform: translateY(0);
         opacity: 1;
     }
 
-    .toast-close {
+    .smackbar-close {
         float: right;
         cursor: pointer;
         margin-left: 1em;
     }
 
-    .toast-button {
+    .smackbar-button {
         float: right;
         background: inherit;
         font-size: 1.2em;
@@ -43,11 +44,11 @@ $mobile: 480px;
         cursor: pointer;
     }
 
-    .toast-button:hover {
+    .smackbar-button:hover {
         background: #514951;
     }
 
-    .toast-button:active {
+    .smackbar-button:active {
         background: #6b626b;
     }
 }
