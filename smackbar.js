@@ -42,7 +42,7 @@ $.smackbar = function (obj) {
 
     setTimeout(function () {
         $smackbar.addClass('smackbar--shown')
-    }, 0)
+    }, 50)
 
     $('.smackbar .smackbar-close').click(function () {
         close()
