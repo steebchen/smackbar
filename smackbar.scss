@@ -11,7 +11,7 @@ $mobile: 480px;
     width: 500px;
     z-index: 1000000000;
     transform: translateY(200%);
-    transition: .5s all;
+    transition: .5s transform;
     opacity: 0;
     background: #363136;
     color: #fff;
@@ -42,13 +42,13 @@ $mobile: 480px;
         text-transform: uppercase;
         letter-spacing: 1px;
         cursor: pointer;
-    }
 
-    .smackbar-button:hover {
-        background: #514951;
-    }
+        &:hover {
+            background: #514951;
+        }
 
-    .smackbar-button:active {
-        background: #6b626b;
+        &:active {
+            background: #6b626b;
+        }
     }
 }
