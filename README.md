@@ -35,11 +35,11 @@ npm i smackbar
 
 #### simple
 
-This simple example shows a toast with a close button. It gets automatically
+This simple example shows a smackbar with a close button. It gets automatically
 dismissed after 4 seconds.
 
 ```js
-$.toast({
+$.smackbar({
     message: 'hi'
 })
 ```
@@ -47,9 +47,9 @@ $.toast({
 #### all options
 
 ```js
-$.toast({
+$.smackbar({
     message: 'hi', // this is the only required field
-    timeout: 5000, // sepcify time in ms after the toast closes. set to false or 0 to disable
+    timeout: 5000, // sepcify time in ms after the smackbar closes. set to false or 0 to disable
     button: {
         text: 'Undo', // the button text, will be transformed into uppercase automatically
         preventClose: boolean, // TODO
@@ -58,7 +58,7 @@ $.toast({
         }
     },
     onclose: function() {
-        console.log('this function gets called when the toast gets closed')
+        console.log('this function gets called when the smackbar gets closed')
     }
 })
 ```
