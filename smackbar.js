@@ -13,7 +13,7 @@ function init() {
             throw new Error('no message specified')
         }
 
-        const $smackbar = $('<div/>')
+        var $smackbar = $('<div/>')
         $smackbar.addClass('smackbar')
 
         function close() {
@@ -24,7 +24,7 @@ function init() {
         $smackbar.html('<div class="smackbar-text">' + obj.message + '</div>')
 
         if (obj.button) {
-            const $smackbarButton = $('<div/>')
+            var $smackbarButton = $('<div/>')
             $smackbarButton.addClass('smackbar-button btn')
             $smackbarButton.html(obj.button.text)
 
