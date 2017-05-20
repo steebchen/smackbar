@@ -18,6 +18,9 @@ function init() {
 
         function close() {
             $smackbar.removeClass('smackbar--shown')
+            setTimeout(function () {
+                $smackbar.remove()
+            }, 1100)
             if (obj.onclose) obj.onclose()
         }
 
